@@ -1,0 +1,86 @@
+.confusion-matrix-container{
+
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+
+}
+
+.confusion-matrix-header{
+
+    display: flex;
+    flex: 2;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px 5px 0px 0px;
+
+    background-color: #969696;
+    color: white;
+    font-size: 8pt;
+    font-weight: 500;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; 
+
+}
+
+.confusion-matrix-footer-container svg {
+
+    height: 90% !important;
+    width: 90% !important;
+    
+    margin-right: "0px";
+    margin-left: "0px";
+
+}
+
+
+.confusion-matrix-footer-container{
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+
+}
+
+.confusion-matrix-footer{
+
+    position: relative;
+
+    display: flex;
+    flex: 5 0 auto;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.confusion-matrix-body{
+
+    display: flex;
+    flex: 9;
+    flex-direction: column;
+}
+
+.matrix-row{
+
+    display: flex;
+    flex-direction: row;
+    flex:1;
+
+}
+
+.matrix-column{
+
+    display: flex;
+    flex:1;
+    align-items: center;
+    justify-content: center;
+}
+
+.cell-value {
+
+    color: #ef8a62;
+}
