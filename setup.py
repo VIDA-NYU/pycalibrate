@@ -21,7 +21,11 @@ setup(
     ],
     python_requires='>=3.8',
     install_requires=[
-        'numpy==1.21.5',
-        'scikit-learn==1.0.2'
+        'numpy',
+        'scikit-learn',
+        'notebook',
+        'notebookjs',
+        'interpret',
+        'pandas'
     ]
 )
