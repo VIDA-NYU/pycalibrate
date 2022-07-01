@@ -1,2 +1,2 @@
-# interactivecalibration
+# PyCalibrate
 Interactive Calibration Plots
