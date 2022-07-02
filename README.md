@@ -1,22 +1,36 @@
-# PyCalibrate
+[![Downloads](https://static.pepy.tech/personalized-badge/pycalibrate?period=total&units=international_system&left_color=grey&right_color=blue&left_text=Downloads)](https://pepy.tech/project/pycalibrate) [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1EBWWy43btgBX-q_pucXtHBOTy-SKerXu?usp=sharing)
+ [![Build](https://github.com/VIDA-NYU/pycalibrate/actions/workflows/build.yml/badge.svg)](https://github.com/VIDA-NYU/pycalibrate/actions/workflows/build.yml) [![Documentation Status](https://readthedocs.org/projects/pycalibrate/badge/?version=latest)](https://pycalibrate.readthedocs.io/en/latest/?badge=latest) [![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/VIDA-NYU/pycalibrate/blob/main/LICENSE)
+
+ ## pycalibrate
+
+ Pycalibrate is a Python package that allows access to the _Calibrate_ tool. Calibrate is a visual analytics tool used to analyze model calibration in Jupyter Notebooks. Below, we show what Calibrate looks like in practice.
 
 ![System screen](https://github.com/VIDA-NYU/pycalibrate/blob/main/images/teaser.png?raw=true)
 
-
-## Introduction
-
-Analyzing classification model performance is a crucial task for machine learning practitioners. While practitioners often use count-based metrics derived from confusion matrices, like accuracy, many applications, such as weather prediction, sports betting, or patient risk prediction, rely on a classifier’s predicted probabilities rather than predicted labels. In these instances, practitioners are concerned with producing a calibrated model, that is, one which outputs probabilities that reflect those of the true distribution. Model calibration is often analyzed visually,through static reliability diagrams, however, the traditional calibration visualization may suffer from a variety of drawbacks due to the strong aggregations it necessitates. Furthermore, count-based approaches are unable to sufficiently analyze model calibration. We present Calibrate, an interactive reliability diagram that addresses the aforementioned issues. Calibrate constructs a reliability diagram that is resistant to drawbacks in traditional approaches, and allows for interactive subgroup analysis and instance-level inspection.
-
 ## Installation
 
-### Option 1: Local Installation:
+Installing pycalibrate is easy. Simply run:
 
-Clone the repo:
-~~~~
-git clone https://github.com/VIDA-NYU/pycalibrate.git
-~~~~
+```shell
+pip install pycalibrate
+```
 
+You can also use pycalibrate on Colab, by copying our [Example Colab Notebook](https://colab.research.google.com/drive/1EBWWy43btgBX-q_pucXtHBOTy-SKerXu?usp=sharing).
 
+## Usage
+One can pycalibrate in just a few lines of code:
 
+```python
+from pycalibrate import Calibrate
 
-Interactive Calibration Plots
+c = Calibrate(data=dataset) # `dataset` must be a Pandas dataframe
+
+c.add_model(y_preds, y_labels, "ModelName") 
+# y_preds is an n x k matrix of predictions
+# y_labels is an n x k matrix of one-hot encoded labels
+
+c.visualize() # Voila! 
+```
+
+## Need Help?
+Need help? Open up an [issue](https://github.com/VIDA-NYU/pycalibrate/issues).

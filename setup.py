@@ -5,10 +5,10 @@ with open("README.md", "r") as fh:
 
 setup(
     name="pycalibrate",
-    version="4.0.0",
+    version="0.0.1",
     author="Peter Xenopoulos, Joao Rulff, Brian Barr, Luis Gustavo Nonato, Claudio Silva",
-    author_email="pnx200@nyu.edu",
-    description="Pycalibrate. A tool to assess classifier calibration",
+    author_email="xenopoulos@nyu.edu",
+    description="pycalibrate. A tool to assess classifier calibration in Jupyter Notebooks",
     long_description=long_description,
     long_description_content_type='text/markdown',
     url='https://github.com/VIDA-NYU/pycalibrate',
