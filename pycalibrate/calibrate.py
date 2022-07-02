@@ -32,7 +32,7 @@ class Calibrate:
 
         ## loading vis lib
         self.vislib = None
-        with open ('vis/dist/calibration.js', "r") as f:
+        with open ('./vis/dist/calibration.js', "r") as f:
             self.vislib = f.read()
 
     def add_model(self, predictions, labels, name):
