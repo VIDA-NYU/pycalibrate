@@ -14,6 +14,8 @@ pip install pycalibrate
 
 You can also use pycalibrate on Colab, by copying our [Example Colab Notebook](https://colab.research.google.com/drive/1EBWWy43btgBX-q_pucXtHBOTy-SKerXu?usp=sharing).
 
+You can also pip install directly from the repository by running `pip install git+https://github.com/VIDA-NYU/pycalibrate`
+
 ## Usage
 One can pycalibrate in just a few lines of code:
 
