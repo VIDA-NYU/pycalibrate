@@ -19,7 +19,7 @@ setup(
         "License :: OSI Approved :: BSD License",
         "Operating System :: OS Independent",
     ],
-    python_requires='>=3.8',
+    python_requires='>=3.7',
     install_requires=[
         'numpy',
         'scikit-learn',
