@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setup(
     name="pycalibrate",
-    version="0.0.2",
+    version="0.0.3",
     author="Peter Xenopoulos, Joao Rulff, Brian Barr, Luis Gustavo Nonato, Claudio Silva",
     author_email="xenopoulos@nyu.edu",
     description="pycalibrate. A tool to assess classifier calibration in Jupyter Notebooks",
