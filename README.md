@@ -4,8 +4,6 @@
 
  Pycalibrate is a Python package that allows access to the _Calibrate_ tool. Calibrate is a visual analytics tool used to analyze model calibration in Jupyter Notebooks. Below, we show what Calibrate looks like in practice.
 
-![System screen](https://github.com/VIDA-NYU/pycalibrate/blob/main/images/teaser.png?raw=true)
-
 ## Installation
 
 Installing pycalibrate is easy. Simply run:
@@ -30,6 +28,10 @@ c.add_model(y_preds, y_labels, "ModelName")
 
 c.visualize() # Voila! 
 ```
+
+## Calibrate Tool
+
+![System screen](https://github.com/VIDA-NYU/pycalibrate/blob/main/images/teaser.png?raw=true)
 
 ## Need Help?
 Need help? Open up an [issue](https://github.com/VIDA-NYU/pycalibrate/issues).
