@@ -1,3 +1,5 @@
+import os
+
 try:
     import importlib.resources as pkg_resources
 except ImportError:
