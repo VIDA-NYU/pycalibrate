@@ -40,9 +40,9 @@ class Calibrate:
 
         ## loading vis lib
         self.vislib = None
-        #data_dir = os.path.join(os.path.dirname(__file__), "")
-        #data_path = os.path.join(data_dir, "vis/dist/calibration.js")
-        with open("./vis/dist/calibration.js", "r") as f:
+        data_dir = os.path.join(os.path.dirname(__file__), "")
+        data_path = os.path.join(data_dir, "vis/dist/calibration.js")
+        with open(data_path, "r") as f:
             self.vislib = f.read()
 
     def add_model(self, predictions, labels, name):
